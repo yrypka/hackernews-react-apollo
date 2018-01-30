@@ -5,6 +5,8 @@ const Mutation = require('./resolvers/Mutation')
 const Subscription = require('./resolvers/Subscription')
 const Feed = require('./resolvers/Feed')
 
+require('events').EventEmitter.defaultMaxListeners = 0
+
 const resolvers = {
   Query,
   Mutation,
